@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<% @quote.characters.each do |key, value| %>
+  <p><%= "#{key}: #{value}" %></p>
+<% end %>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
